@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--  全屏   -->
+    <style name="AppFullTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <!--        App 启动优化， 页面透明-->
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
 </resources>

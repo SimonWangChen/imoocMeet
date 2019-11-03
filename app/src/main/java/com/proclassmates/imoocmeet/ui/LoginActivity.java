@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.proclassmates.framework.base.BaseActivity;
 //import com.proclassmates.framework.base.BaseUIActivity;
 import com.proclassmates.framework.bmob.BmobManager;
+import com.proclassmates.framework.bmob.IMUser;
 import com.proclassmates.framework.entity.Constants;
 import com.proclassmates.framework.manager.DialogManager;
 import com.proclassmates.framework.utils.LogUtils;

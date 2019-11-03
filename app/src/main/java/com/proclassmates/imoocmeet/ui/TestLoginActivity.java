@@ -8,13 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.imooc.meet.MainActivity;
-import com.imooc.meet.R;
-import com.liuguilin.framework.base.BaseBackActivity;
-import com.liuguilin.framework.bmob.BmobManager;
-import com.liuguilin.framework.bmob.IMUser;
+
 import com.proclassmates.framework.base.BaseBackActivity;
 import com.proclassmates.framework.bmob.BmobManager;
+import com.proclassmates.framework.bmob.IMUser;
 import com.proclassmates.imoocmeet.MainActivity;
 import com.proclassmates.imoocmeet.R;
 

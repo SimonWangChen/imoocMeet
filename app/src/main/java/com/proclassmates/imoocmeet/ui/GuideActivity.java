@@ -14,6 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.proclassmates.framework.base.BasePageAdapter;
 import com.proclassmates.framework.base.BaseUiActivity;
+import com.proclassmates.framework.manager.MediaPlayerManager;
 import com.proclassmates.imoocmeet.R;
 
 import java.util.ArrayList;

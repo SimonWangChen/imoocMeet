@@ -1,15 +1,13 @@
 package com.proclassmates.imoocmeet.ui;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.Constraints;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.proclassmates.framework.bmob.BmobManager;
 import com.proclassmates.framework.entity.Constants;
@@ -46,26 +44,25 @@ public class IndexActivity extends AppCompatActivity {
 
         boolean isFirstApp = SpUtils.getInstance().getBoolean(Constants.SP_IS_FIRST_APP, true);
 
-//        if (isFirstApp) {
-//            intent.setClass(this, GuideActivity.class);
-//
-//            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
-//
-//        } else {
-//            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
-//
-//            if(TextUtils.isEmpty(token)){
-//                if(BmobManager.getInstance().isLogin()){
-//                    intent.setClass(this, MainActivity.class);
-//                }else{
-//                    intent.setClass(this, LoginActivity.class);
-//                }
-//            }else{
-//                intent.setClass(this, MainActivity.class);
-//            }
-//        }
+        if (isFirstApp) {
+            intent.setClass(this, GuideActivity.class);
 
-        intent.setClass(this, GuideActivity.class);
+            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
+
+        } else {
+            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
+
+            if(TextUtils.isEmpty(token)){
+                if(BmobManager.getInstance().isLogin()){
+                    intent.setClass(this, MainActivity.class);
+                }else{
+                    intent.setClass(this, LoginActivity.class);
+                }
+            }else{
+                intent.setClass(this, MainActivity.class);
+            }
+        }
+
 
         startActivity(intent);
 

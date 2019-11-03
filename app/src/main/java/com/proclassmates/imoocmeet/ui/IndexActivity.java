@@ -46,23 +46,26 @@ public class IndexActivity extends AppCompatActivity {
 
         boolean isFirstApp = SpUtils.getInstance().getBoolean(Constants.SP_IS_FIRST_APP, true);
 
-        if (isFirstApp) {
-            intent.setClass(this, GuideActivity.class);
-            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
+//        if (isFirstApp) {
+//            intent.setClass(this, GuideActivity.class);
+//
+//            SpUtils.getInstance().putBoolean(Constants.SP_IS_FIRST_APP, false);
+//
+//        } else {
+//            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
+//
+//            if(TextUtils.isEmpty(token)){
+//                if(BmobManager.getInstance().isLogin()){
+//                    intent.setClass(this, MainActivity.class);
+//                }else{
+//                    intent.setClass(this, LoginActivity.class);
+//                }
+//            }else{
+//                intent.setClass(this, MainActivity.class);
+//            }
+//        }
 
-        } else {
-            String token = SpUtils.getInstance().getString(Constants.SP_TOKEN, "");
-
-            if(TextUtils.isEmpty(token)){
-                if(BmobManager.getInstance().isLogin()){
-                    intent.setClass(this, MainActivity.class);
-                }else{
-                    intent.setClass(this, LoginActivity.class);
-                }
-            }else{
-                intent.setClass(this, MainActivity.class);
-            }
-        }
+        intent.setClass(this, GuideActivity.class);
 
         startActivity(intent);
 

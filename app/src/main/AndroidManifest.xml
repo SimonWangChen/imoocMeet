@@ -4,17 +4,20 @@
     package="com.proclassmates.imoocmeet">
 
     <application
+        android:name=".base.BaseApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".base.BaseApp"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:allowBackup">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ui.IndexActivity" android:theme="@style/AppFullTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.GuideActivity" android:theme="@style/AppFullTheme"/>
+        <activity
+            android:name=".ui.IndexActivity"
+            android:theme="@style/AppFullTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,8 +27,7 @@
 
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="com.proclassmates.imoocmeet.BmobContentProvider">
-        </provider>
+            android:authorities="com.proclassmates.imoocmeet.BmobContentProvider" />
     </application>
 
 </manifest>

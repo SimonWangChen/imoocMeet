@@ -10,23 +10,25 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+
 import com.proclassmates.framework.base.BasePageAdapter;
-import com.proclassmates.framework.base.BaseUiActivity;
 import com.proclassmates.framework.manager.MediaPlayerManager;
+import com.proclassmates.framework.utils.AnimUtils;
 import com.proclassmates.imoocmeet.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author simon
- * @name imoocMeet
- * @class name：com.proclassmates.imoocmeet.ui
- * @time 2019-11-02 21:26
- */
-class GuideActivity extends BaseUiActivity implements View.OnClickListener{
+*@desc     GuideActivity
+*@author   SimonWvW
+*create at: 2019-11-03 11:21
+*/
+public class GuideActivity extends AppCompatActivity implements View.OnClickListener {
+
     private ImageView iv_music_switch;
     private TextView tv_guide_skip;
     private ImageView iv_guide_point_1;
@@ -199,5 +201,4 @@ class GuideActivity extends BaseUiActivity implements View.OnClickListener{
         super.onDestroy();
         mGuideMusic.stopPlay();
     }
-
 }

@@ -2,6 +2,7 @@ package com.proclassmates.framework;
 
 import android.content.Context;
 
+import com.proclassmates.framework.bmob.BmobManager;
 import com.proclassmates.framework.utils.LogUtils;
 import com.proclassmates.framework.utils.SpUtils;
 import com.tencent.bugly.crashreport.CrashReport;
@@ -42,7 +43,7 @@ public class Framework {
     public void initFramework(Context mContext) {
         LogUtils.i("initFramework");
         SpUtils.getInstance().initSP(mContext);
-//        BmobManager.getInstance().initBmob(mContext);
+        BmobManager.getInstance().initBmob(mContext);
 //        CloudManager.getInstance().initCloud(mContext);
         LitePal.initialize(mContext);
 //        MapManager.getInstance().initMap(mContext);

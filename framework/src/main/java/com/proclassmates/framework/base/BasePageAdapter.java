@@ -44,6 +44,6 @@ public class BasePageAdapter extends PagerAdapter {
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         ((ViewPager) container).addView(mList.get(position));
 
-        return super.instantiateItem(container, position);
+        return mList.get(position);
     }
 }

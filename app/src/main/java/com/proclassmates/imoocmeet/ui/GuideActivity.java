@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
+import com.proclassmates.framework.base.BasePageAdapter;
 import com.proclassmates.framework.base.BaseUiActivity;
 import com.proclassmates.imoocmeet.R;
 

@@ -20,6 +20,7 @@ import com.proclassmates.framework.entity.Constants;
 import com.proclassmates.framework.utils.LogUtils;
 import com.proclassmates.framework.utils.SpUtils;
 import com.proclassmates.framework.view.DialogView;
+import com.proclassmates.framework.view.TouchPictureV;
 import com.proclassmates.imoocmeet.MainActivity;
 import com.proclassmates.imoocmeet.R;
 

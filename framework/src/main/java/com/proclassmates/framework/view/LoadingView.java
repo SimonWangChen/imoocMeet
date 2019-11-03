@@ -6,6 +6,10 @@ import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.proclassmates.framework.R;
+import com.proclassmates.framework.manager.DialogManager;
+import com.proclassmates.framework.utils.AnimUtils;
+
 /**
  * @author simon
  * @name imoocMeet
@@ -19,7 +23,7 @@ public class LoadingView {
     private TextView tv_loding_text;
     private ObjectAnimator mAnim;
 
-    public LodingView(Context mContext) {
+    public LoadingView(Context mContext) {
         mLodingView = DialogManager.getInstance().initView(mContext, R.layout.dialog_loding);
         iv_loding = mLodingView.findViewById(R.id.iv_loding);
         tv_loding_text = mLodingView.findViewById(R.id.tv_loding_text);

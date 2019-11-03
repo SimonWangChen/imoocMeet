@@ -17,9 +17,11 @@ import com.proclassmates.framework.base.BaseActivity;
 //import com.proclassmates.framework.base.BaseUIActivity;
 import com.proclassmates.framework.bmob.BmobManager;
 import com.proclassmates.framework.entity.Constants;
+import com.proclassmates.framework.manager.DialogManager;
 import com.proclassmates.framework.utils.LogUtils;
 import com.proclassmates.framework.utils.SpUtils;
 import com.proclassmates.framework.view.DialogView;
+import com.proclassmates.framework.view.LoadingView;
 import com.proclassmates.framework.view.TouchPictureV;
 import com.proclassmates.imoocmeet.MainActivity;
 import com.proclassmates.imoocmeet.R;
@@ -53,7 +55,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private TextView tv_test_login;
 
-    private LodingView mLodingView;
+    private LoadingView mLodingView;
 
     private static final int H_TIME = 1001;
     //60s倒计时
@@ -108,7 +110,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     private void initDialogView() {
 
-        mLodingView = new LodingView(this);
+        mLodingView = new LoadingView(this);
 
         mCodeView = DialogManager.getInstance().initView(this, R.layout.dialog_code_view);
         mPictureV = mCodeView.findViewById(R.id.mPictureV);

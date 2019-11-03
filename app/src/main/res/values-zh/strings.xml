@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">"遇见你"</string>
+    <string name="app_name">遇见你</string>
     <string name="skip">跳过</string>
+    <string name="text_guide_pager_1">每个人都是一颗孤独的星球</string>
+    <string name="text_guide_pager_3">Please Smile when it happens!</string>
+    <string name="text_guide_pager_2">Look through the night!</string>
 
 </resources>

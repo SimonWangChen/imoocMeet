@@ -4,6 +4,7 @@
     package="com.proclassmates.imoocmeet">
 
     <application
+        android:usesCleartextTraffic="true"
         android:name=".base.BaseApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"

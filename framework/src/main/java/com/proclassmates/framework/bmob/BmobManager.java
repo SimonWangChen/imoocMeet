@@ -17,10 +17,13 @@ import cn.bmob.v3.listener.SaveListener;
  */
 public class BmobManager {
     // 刘桂林的key
-    //    private static final String BMOB_SDK_ID = "f8efae5debf319071b44339cf51153fc";
+//    private static final String BMOB_SDK_ID = "f8efae5debf319071b44339cf51153fc";
     // Simon 的key
     private static final String BMOB_SDK_ID = "8d29ec28b2a81b97afa1ae54587ef06f";
-
+    /**
+     * net work error
+     * 可以把应用卸载之后，重新安装
+     */
     private volatile static BmobManager mInstance = null;
 
     private BmobManager() {
